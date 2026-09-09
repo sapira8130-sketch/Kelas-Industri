@@ -1494,4 +1494,72 @@ body::before {
   }
 }
 
+/* --- Technology Marquee Strip Section --- */
+.tech-strip-section {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-strip-container {
+  width: 100%;
+  padding: 16px 0;
+  background: rgba(11, 16, 32, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.tech-strip-marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+.tech-strip-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  white-space: nowrap;
+  animation: techStripScroll 25s linear infinite;
+}
+
+.tech-strip-track:hover {
+  animation-play-state: paused;
+}
+
+.tech-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  transition: all 0.25s ease;
+}
+
+.tech-strip-item:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tech-strip-icon {
+  font-size: 1rem;
+}
+
+@keyframes techStripScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
 
