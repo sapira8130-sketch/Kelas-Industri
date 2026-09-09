@@ -9,7 +9,7 @@
   <div class="stacked-projects-container">
     <% if (portfolio.projects) { %>
       <% portfolio.projects.forEach((project, index) => { %>
-        <article class="glass-card stacked-project-card" style="--card-index: <%= index %>; z-index: <%= index + 1 %>;">
+        <article class="glass-card stacked-project-card" style="--card-index: <%= index %>; z-index: <%= 20 - index %>;">
           <!-- Floating Category Badge -->
           <div class="stacked-category-badge">
             <span class="badge-pill">
