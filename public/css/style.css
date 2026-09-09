@@ -865,25 +865,26 @@ body {
 }
 
 .stacked-project-card {
-  position: relative;
+  position: sticky;
+  top: calc(90px + (var(--card-index) * 35px));
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, rgba(13, 17, 23, 0.94) 0%, rgba(22, 27, 34, 0.9) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, rgba(13, 17, 23, 0.95) 0%, rgba(22, 27, 34, 0.92) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 24px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   padding: 0;
   overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .stacked-project-card + .stacked-project-card {
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 .stacked-project-card:hover {
