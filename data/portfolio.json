@@ -9,8 +9,8 @@
     "location": "Indonesia",
     "status": "Available For Learning & Collaboration",
     "avatar": "/images/profile.jpg",
-    "shortBio": "Software Engineering student passionate about building modern websites, web applications, and digital experiences through clean design and technology.",
-    "aboutText": "Halo! Aku Sapira, siswa SMK Jakarta Pusat 1 jurusan Rekayasa Perangkat Lunak (RPL). Aku senang mengubah ide menjadi produk nyata — dari desain sampai kode. Berpengalaman dalam merancang antarmuka menggunakan Figma serta mengembangkan website menggunakan HTML, CSS, JavaScript, dan Node.js. Selalu haus akan hal baru dan siap bekerja secara kolaboratif untuk menghasilkan project yang kreatif dan fungsional! 🚀",
+    "shortBio": "Siswa Rekayasa Perangkat Lunak yang antusias dalam mengubah ide menjadi produk digital nyata — dari rancangan UI/UX sampai kode aplikasi web yang cepat dan intuitif.",
+    "aboutText": "Halo! Aku Sapira, siswa SMK Jakarta Pusat 1 jurusan Rekayasa Perangkat Lunak (RPL). Aku senang mengubah ide menjadi produk nyata — dari desain sampai kode. Fokus utamaku di web development (Node.js & Flutter), dan aku juga aktif di dunia UI/UX design. Selalu haus akan hal baru dan siap menghadapi tantangan apa pun! 🚀",
     "achievement": "Siswa Rekayasa Perangkat Lunak (RPL) · 2024–2027"
   },
   "contact": {
@@ -18,7 +18,7 @@
     "whatsappUrl": "https://wa.me/6287821276807",
     "email": "Sapira.8130@smk.belajar.id",
     "emailUrl": "mailto:Sapira.8130@smk.belajar.id",
-    "githubUser": "Sapira.8130",
+    "githubUser": "sapira8130-sketch",
     "githubUrl": "https://github.com/sapira8130-sketch",
     "linkedinUrl": "[Add LinkedIn URL]"
   },
@@ -27,7 +27,8 @@
       { "name": "HTML", "level": "Core", "icon": "code" },
       { "name": "CSS", "level": "Core", "icon": "palette" },
       { "name": "JavaScript", "level": "Core", "icon": "js" },
-      { "name": "Node.js", "level": "Core", "icon": "server" }
+      { "name": "Node.js", "level": "Core", "icon": "server" },
+      { "name": "Flutter", "level": "Used", "icon": "mobile" }
     ],
     "database": [
       { "name": "MySQL", "level": "Core", "icon": "database" }
@@ -58,6 +59,7 @@
     { "name": "Node.js", "category": "Backend", "status": "Core" },
     { "name": "Express.js", "category": "Framework", "status": "Core" },
     { "name": "MySQL", "category": "Database", "status": "Core" },
+    { "name": "Flutter", "category": "Mobile", "status": "Used" },
     { "name": "Figma", "category": "Design", "status": "Core" },
     { "name": "Canva", "category": "Design", "status": "Used" },
     { "name": "GitHub", "category": "Tools", "status": "Used" },
@@ -98,15 +100,15 @@
       "category": "UI/UX Design, Web Design",
       "type": "ACADEMIC PROJECT",
       "date": "October 2024",
-      "summary": "Membuat desain antarmuka website E-Commerce Wardah Cosmetic mencakup navigasi header, katalog produk (Lipstik, Sunscreen, Bedak), halaman detail produk (Matte Lip Cream), serta ulasan pelanggan.",
+      "summary": "Design Website Wardah Cosmetic adalah rancangan antarmuka toko e-commerce kosmetik halal yang kubangun untuk menyusun halaman marketing & katalog produk yang menarik, responsif, serta mudah digunakan pelanggan.",
       "problem": "Calon pembeli kosmetik sering kesulitan melihat varian warna produk, ulasan asli, dan informasi promo secara jelas dalam satu tampilan e-commerce yang intuitif.",
-      "solution": "Merancang UI/UX website Wardah Cosmetic dengan navigasi banner promo, katalog produk kategori (Lipstik, Sunscreen, Bedak), serta halaman detail produk Matte Lip Cream dengan ulasan pelanggan.",
+      "solution": "Merancang antarmuka e-commerce dengan seksi banner promo gratis ongkir, pemilah kategori produk (Lipstik, Sunscreen, Bedak), serta halaman detail produk Matte Lip Cream dengan tombol ulasan pelanggan yang jelas.",
       "features": [
-        "Header Banner Promo & Free Shipping",
+        "Header Banner Promo & Free Shipping Minimum 100K",
         "Katalog Kategori Produk (Lipstik, Sunscreen, Bedak)",
-        "Showcase Detail Produk Matte Lip Cream",
-        "Ulasan Pelanggan & Rating 4.9",
-        "Tombol CTA Beli Sekarang & Desain Responsif"
+        "Showcase Detail Produk Matte Lip Cream (Rp78.000)",
+        "Fitur Ulasan Pelanggan & Rating 4.9 Star",
+        "Desain modern dengan CTA Beli Sekarang & Tampilan Responsif"
       ],
       "tools": ["Figma", "UI/UX", "Web Design"],
       "image": "/images/project-wardah-cosmetic.jpg",
@@ -122,15 +124,14 @@
       "category": "Web Application, UI/UX Design",
       "type": "ACADEMIC PROJECT",
       "date": "September 2025",
-      "summary": "Mengembangkan aplikasi website Kotak Curhat BK (Bimbingan Konseling) untuk memfasilitasi siswa kelas XII RPL 1 dalam menyampaikan aspirasi, curhatan, dan konseling secara digital, aman, serta terstruktur.",
+      "summary": "Web Kotak Curhat BK adalah aplikasi sistem informasi bimbingan konseling yang kubangun untuk memfasilitasi siswa menyampaikan aspirasi dan masalah secara digital, aman, serta terstruktur.",
       "problem": "Siswa sering merasa ragu atau enggan menyampaikan aspirasi, keluh kesah, atau masalah konseling secara langsung di sekolah karena masalah privasi dan kecanggangan.",
-      "solution": "Membangun website Kotak Curhat BK digital yang aman dan terstruktur untuk memfasilitasi siswa kelas XII RPL 1 dalam berkonsultasi dengan guru BK secara nyaman.",
+      "solution": "Membangun website Kotak Curhat BK digital dengan dasbor terstruktur, salam personal, form curhatan baru, serta sistem penanganan pesan terorganisir yang membuat siswa merasa aman.",
       "features": [
-        "Tampilan Personal Halo Sapira",
-        "Formulir Curhatan Baru",
-        "Penyampaian Aspirasi & Konseling",
-        "Sistem Privasi & Terstruktur",
-        "Responsive Interface & Modern UI"
+        "Tampilan Dasbor Personal Halo Sapira (Kelas XII RPL 1)",
+        "Formulir Tulis Curhatan Baru & Penghitung Karakter",
+        "Penyampaian Aspirasi & Konseling Digital Aman",
+        "Sistem Privasi & Responsif Di Semua Layar"
       ],
       "tools": ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
       "image": "/images/project-kotak-surat-bk.jpg",
@@ -146,15 +147,15 @@
       "category": "Web Application, Mobile Application",
       "type": "ACADEMIC / PERSONAL PROJECT",
       "date": "June 2026",
-      "summary": "Mengembangkan aplikasi produktivitas manajemen tugas TaskFlow berbasis mobile (Flutter/Dart) dan website dengan fitur ringkasan tugas (Total, Selesai, Pending), pencarian tugas, serta pengelolaan status.",
+      "summary": "TaskFlow adalah aplikasi manajemen tugas produktivitas harian yang kubangun dengan Flutter (Mobile) dan Web untuk membantu pengguna mencatat dan memantau status tugas secara real-time.",
       "problem": "Banyak tugas sekolah dan harian yang berantakan atau lupa dikerjakan karena tidak ada sistem pelacak progres yang terpusat di mobile dan web.",
-      "solution": "Mengembangkan aplikasi TaskFlow berbasis Flutter (Mobile) dan Web untuk membantu pengguna mencatat, memantau ringkasan tugas (Total, Selesai, Pending), serta mengorganisir status tugas.",
+      "solution": "Membangun aplikasi Flutter & Web yang menampilkan ringkasan statistik tugas (Total, Selesai, Pending), fitur pencarian, filter kategori, serta status tugas yang mudah diperbarui.",
       "features": [
-        "Statistik Ringkasan Tugas (Total, Selesai, Pending)",
-        "Cross-Platform Mobile (Flutter/Dart) & Web",
-        "Pencarian & Filter Kategori Tugas",
-        "Form Tambah & Kelola Tugas",
-        "State Management Provider"
+        "Ringkasan Statistik Tugas (Total, Selesai, Pending)",
+        "Indikator Progress Bar Penyelesaian Tugas",
+        "Cross-Platform Mobile (Flutter/Dart) & Web Interface",
+        "Pencarian & Filter Kategori Tugas (Semua, Selesai, Belum Selesai)",
+        "Form Tambah Tugas Pertama & State Management Provider"
       ],
       "tools": ["Flutter", "Dart", "Provider", "JavaScript", "Node.js"],
       "image": "/images/project-todo-app.jpg",
