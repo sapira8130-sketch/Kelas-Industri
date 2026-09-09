@@ -1256,3 +1256,314 @@ body {
     margin: 0 auto;
   }
 }
+
+/* --- Background Tech Grid Lines Overlay --- */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- Centered Hero Layout (Emir Yafi Reference Design) --- */
+.hero-section-centered {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-widget-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 48px 32px 36px 32px;
+  background: rgba(11, 16, 32, 0.68);
+  backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(37, 99, 235, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-widget-centered::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.4), transparent);
+}
+
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 18px;
+  background: rgba(16, 40, 28, 0.75);
+  border: 1px solid rgba(34, 197, 94, 0.45);
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #4ade80;
+  margin-bottom: 24px;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+}
+
+.green-pulse {
+  background-color: #22c55e !important;
+  box-shadow: 0 0 12px #22c55e !important;
+}
+
+.hero-title-centered {
+  font-size: 3.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 60%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.15));
+}
+
+.hero-subtitle-centered {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #38bdf8;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.hero-info-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.info-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(18, 26, 46, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  backdrop-filter: blur(15px);
+  transition: all 0.25s ease;
+}
+
+.info-pill-link {
+  text-decoration: none;
+}
+
+.info-pill-link:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(30, 41, 65, 0.9);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-action-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(15px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.action-pill:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.pill-whatsapp {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.35);
+  color: #25d366;
+}
+
+.pill-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.25);
+  border-color: rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+}
+
+.pill-email {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+}
+
+.pill-email:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.6);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+}
+
+.pill-github {
+  background: rgba(167, 139, 250, 0.12);
+  border-color: rgba(167, 139, 250, 0.35);
+  color: #c084fc;
+}
+
+.pill-github:hover {
+  background: rgba(167, 139, 250, 0.25);
+  border-color: rgba(167, 139, 250, 0.6);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(167, 139, 250, 0.35);
+}
+
+.pill-contact {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(124, 58, 237, 0.4));
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pill-contact:hover {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.7), rgba(124, 58, 237, 0.7));
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+}
+
+/* Tech Marquee Chips */
+.tech-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 28px;
+  padding: 8px 0;
+}
+
+.tech-marquee-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  transition: all 0.25s ease;
+}
+
+.tech-chip:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Avatar Float Pill */
+.hero-profile-avatar-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px 8px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  backdrop-filter: blur(15px);
+  margin-top: 8px;
+}
+
+.mini-profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.mini-profile-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.mini-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.mini-role {
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .hero-title-centered {
+    font-size: 2.6rem;
+  }
+  .hero-subtitle-centered {
+    font-size: 1.1rem;
+  }
+  .hero-widget-centered {
+    padding: 32px 18px 24px 18px;
+  }
+  .hero-info-pills, .hero-action-pills {
+    gap: 8px;
+  }
+  .info-pill, .action-pill {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+}
+
