@@ -5,41 +5,54 @@
     <h2 class="section-title">ABOUT ME</h2>
   </div>
 
-  <div class="glass-card about-card">
-    <div class="about-text">
+  <div class="glass-card about-card" style="display: flex; flex-direction: column; gap: 24px;">
+    <!-- Main Bio Paragraph -->
+    <div class="about-text" style="font-size: 1.05rem; line-height: 1.8; color: #e2e8f0;">
       <p>
-        <%= portfolio.profile ? portfolio.profile.aboutText : 'Siswa SMK jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat dalam bidang teknologi, UI/UX Design, dan Web Development. Berpengalaman dalam merancang antarmuka menggunakan Figma serta mengembangkan website menggunakan HTML, CSS, JavaScript, dan Node.js. Senang mempelajari hal-hal baru, mengembangkan kemampuan, dan bekerja secara kolaboratif untuk menghasilkan project yang kreatif, fungsional, dan mudah digunakan.' %>
+        <%= portfolio.profile ? portfolio.profile.aboutText : 'Halo! Aku Sapira, siswa SMK Jakarta Pusat 1 jurusan Rekayasa Perangkat Lunak (RPL). Aku senang mengubah ide menjadi produk nyata — dari desain sampai kode. Berpengalaman dalam merancang antarmuka menggunakan Figma serta mengembangkan website menggunakan HTML, CSS, JavaScript, dan Node.js. Selalu haus akan hal baru dan siap bekerja secara kolaboratif untuk menghasilkan project yang kreatif dan fungsional! 🚀' %>
       </p>
     </div>
 
-    <div class="about-highlights">
+    <!-- Achievement Badge (Ref Emir Yafi Style) -->
+    <div style="background: rgba(37, 99, 235, 0.12); border: 1px solid rgba(37, 99, 235, 0.3); padding: 16px 20px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 14px;">
+      <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(37, 99, 235, 0.2); display: flex; align-items: center; justify-content: center; color: #60a5fa; flex-shrink: 0; font-size: 1.2rem;">
+        🏆
+      </div>
+      <div>
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 2px;">Siswa Rekayasa Perangkat Lunak (RPL)</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8; font-family: 'JetBrains Mono', monospace;">SMK Jakarta Pusat 1 &middot; 2024–2027</p>
+      </div>
+    </div>
+
+    <!-- Quick Info Cards Grid (Ref Emir Yafi Style) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 8px;">
       <div class="highlight-item">
         <div class="highlight-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         </div>
         <div class="highlight-content">
-          <h4>Education Status</h4>
-          <p>SMK JAKARTA PUSAT 1 — RPL (2024–2027)</p>
+          <h4>Sekolah</h4>
+          <p style="font-weight: 600; color: #ffffff; font-size: 0.88rem;"><%= portfolio.profile ? portfolio.profile.school : 'SMK JAKARTA PUSAT 1' %> - REKAYASA PERANGKAT LUNAK</p>
         </div>
       </div>
 
       <div class="highlight-item">
         <div class="highlight-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div class="highlight-content">
-          <h4>Focus Areas</h4>
-          <p>Full Stack Web Development, UI/UX Prototyping & Database Management</p>
+          <h4>Email</h4>
+          <p style="font-weight: 600; color: #ffffff; font-size: 0.88rem;"><%= portfolio.contact ? portfolio.contact.email : 'Sapira.8130@smk.belajar.id' %></p>
         </div>
       </div>
 
       <div class="highlight-item">
         <div class="highlight-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <div class="highlight-content">
-          <h4>Work Ethic & Soft Skills</h4>
-          <p>Teamwork, Problem Solving, Communication & Creative Design</p>
+          <h4>Status</h4>
+          <p style="font-weight: 600; color: #34d399; font-size: 0.88rem;"><%= portfolio.profile ? portfolio.profile.status : 'Available For Learning & Collaboration' %></p>
         </div>
       </div>
     </div>
