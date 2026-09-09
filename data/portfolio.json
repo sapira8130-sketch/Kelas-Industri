@@ -9,12 +9,13 @@
     "location": "Indonesia",
     "status": "Available For Learning & Collaboration",
     "avatar": "/images/profile.jpg",
-    "shortBio": "Siswa Rekayasa Perangkat Lunak yang antusias dalam mengubah ide menjadi produk digital nyata — dari rancangan UI/UX sampai kode aplikasi web yang cepat dan intuitif.",
+    "shortBio": "Siswa Rekayasa Perangkat Lunak yang antusias dalam mengubah ide menjadi produk digital nyata — dari rancangan UI/UX sampai kode aplikasi web yang cepat, indah, dan intuitif.",
     "aboutText": "Halo! Aku Sapira, siswa SMK Jakarta Pusat 1 jurusan Rekayasa Perangkat Lunak (RPL). Aku senang mengubah ide menjadi produk nyata — dari desain sampai kode. Fokus utamaku di web development (Node.js & Flutter), dan aku juga aktif di dunia UI/UX design. Selalu haus akan hal baru dan siap menghadapi tantangan apa pun! 🚀",
     "achievement": "Siswa Rekayasa Perangkat Lunak (RPL) · 2024–2027"
   },
   "contact": {
-    "phone": "087821276807",
+    "phone": "0878 2127 6807",
+    "phoneRaw": "087821276807",
     "whatsappUrl": "https://wa.me/6287821276807",
     "email": "Sapira.8130@smk.belajar.id",
     "emailUrl": "mailto:Sapira.8130@smk.belajar.id",
