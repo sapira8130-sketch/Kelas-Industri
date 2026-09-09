@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "name": "Sapira",
+    "role": "FULL STACK WEB DEVELOPER",
+    "subRole": "Web Developer • UI/UX Designer • Software Engineering Student",
+    "school": "SMK JAKARTA PUSAT 1",
+    "major": "Rekayasa Perangkat Lunak (RPL)",
+    "educationPeriod": "2024 — 2027",
+    "location": "Indonesia",
+    "status": "Available For Learning & Collaboration",
+    "avatar": "/images/profile.jpg",
+    "shortBio": "Software Engineering student passionate about building modern websites, web applications, and digital experiences through clean design and technology.",
+    "aboutText": "Halo! Aku Sapira, siswa SMK Jakarta Pusat 1 jurusan Rekayasa Perangkat Lunak (RPL). Aku senang mengubah ide menjadi produk nyata — dari desain sampai kode. Berpengalaman dalam merancang antarmuka menggunakan Figma serta mengembangkan website menggunakan HTML, CSS, JavaScript, dan Node.js. Selalu haus akan hal baru dan siap bekerja secara kolaboratif untuk menghasilkan project yang kreatif dan fungsional! 🚀",
+    "achievement": "Siswa Rekayasa Perangkat Lunak (RPL) · 2024–2027"
+  },
+  "contact": {
+    "phone": "087821276807",
+    "whatsappUrl": "https://wa.me/6287821276807",
+    "email": "Sapira.8130@smk.belajar.id",
+    "emailUrl": "mailto:Sapira.8130@smk.belajar.id",
+    "githubUser": "Sapira.8130",
+    "githubUrl": "https://github.com/sapira8130-sketch",
+    "linkedinUrl": "[Add LinkedIn URL]"
+  },
+  "skills": {
+    "webDevelopment": [
+      { "name": "HTML", "level": "Core", "icon": "code" },
+      { "name": "CSS", "level": "Core", "icon": "palette" },
+      { "name": "JavaScript", "level": "Core", "icon": "js" },
+      { "name": "Node.js", "level": "Core", "icon": "server" }
+    ],
+    "database": [
+      { "name": "MySQL", "level": "Core", "icon": "database" }
+    ],
+    "toolsAndDesign": [
+      { "name": "GitHub", "level": "Used", "icon": "git" },
+      { "name": "Figma", "level": "Used", "icon": "figma" },
+      { "name": "Canva", "level": "Used", "icon": "canva" }
+    ],
+    "uiux": [
+      "UI Design",
+      "UX Design",
+      "Responsive Design",
+      "Wireframing",
+      "Layout Design"
+    ],
+    "softSkills": [
+      "Teamwork",
+      "Problem Solving",
+      "Communication",
+      "Creativity"
+    ]
+  },
+  "techStack": [
+    { "name": "HTML5", "category": "Frontend", "status": "Core" },
+    { "name": "CSS3", "category": "Frontend", "status": "Core" },
+    { "name": "JavaScript", "category": "Language", "status": "Core" },
+    { "name": "Node.js", "category": "Backend", "status": "Core" },
+    { "name": "Express.js", "category": "Framework", "status": "Core" },
+    { "name": "MySQL", "category": "Database", "status": "Core" },
+    { "name": "Figma", "category": "Design", "status": "Core" },
+    { "name": "Canva", "category": "Design", "status": "Used" },
+    { "name": "GitHub", "category": "Tools", "status": "Used" },
+    { "name": "EJS", "category": "Templating", "status": "Core" }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "description": "Building responsive and functional websites using modern web technologies.",
+      "icon": "globe"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design",
+      "description": "Designing clean, intuitive, and user-friendly interfaces.",
+      "icon": "layout"
+    },
+    {
+      "id": 3,
+      "title": "Frontend Development",
+      "description": "Turning design concepts into responsive and interactive web interfaces.",
+      "icon": "monitor"
+    },
+    {
+      "id": 4,
+      "title": "Web Application",
+      "description": "Developing functional web applications with structured frontend, backend, and database integration.",
+      "icon": "cpu"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "number": "01",
+      "title": "Design Website Wardah Cosmetic",
+      "subtitle": "Cosmetic E-Commerce UI/UX Design",
+      "category": "UI/UX Design, Web Design",
+      "type": "ACADEMIC PROJECT",
+      "date": "October 2024",
+      "summary": "Membuat desain antarmuka website E-Commerce Wardah Cosmetic mencakup navigasi header, katalog produk (Lipstik, Sunscreen, Bedak), halaman detail produk (Matte Lip Cream), serta ulasan pelanggan.",
+      "problem": "Calon pembeli kosmetik sering kesulitan melihat varian warna produk, ulasan asli, dan informasi promo secara jelas dalam satu tampilan e-commerce yang intuitif.",
+      "solution": "Merancang UI/UX website Wardah Cosmetic dengan navigasi banner promo, katalog produk kategori (Lipstik, Sunscreen, Bedak), serta halaman detail produk Matte Lip Cream dengan ulasan pelanggan.",
+      "features": [
+        "Header Banner Promo & Free Shipping",
+        "Katalog Kategori Produk (Lipstik, Sunscreen, Bedak)",
+        "Showcase Detail Produk Matte Lip Cream",
+        "Ulasan Pelanggan & Rating 4.9",
+        "Tombol CTA Beli Sekarang & Desain Responsif"
+      ],
+      "tools": ["Figma", "UI/UX", "Web Design"],
+      "image": "/images/project-wardah-cosmetic.jpg",
+      "githubUrl": "https://github.com/sapira8130-sketch",
+      "liveUrl": "#",
+      "status": "Completed"
+    },
+    {
+      "id": "project-2",
+      "number": "02",
+      "title": "Web Kotak Curhat BK",
+      "subtitle": "Guidance & Counseling Web App",
+      "category": "Web Application, UI/UX Design",
+      "type": "ACADEMIC PROJECT",
+      "date": "September 2025",
+      "summary": "Mengembangkan aplikasi website Kotak Curhat BK (Bimbingan Konseling) untuk memfasilitasi siswa kelas XII RPL 1 dalam menyampaikan aspirasi, curhatan, dan konseling secara digital, aman, serta terstruktur.",
+      "problem": "Siswa sering merasa ragu atau enggan menyampaikan aspirasi, keluh kesah, atau masalah konseling secara langsung di sekolah karena masalah privasi dan kecanggangan.",
+      "solution": "Membangun website Kotak Curhat BK digital yang aman dan terstruktur untuk memfasilitasi siswa kelas XII RPL 1 dalam berkonsultasi dengan guru BK secara nyaman.",
+      "features": [
+        "Tampilan Personal Halo Sapira",
+        "Formulir Curhatan Baru",
+        "Penyampaian Aspirasi & Konseling",
+        "Sistem Privasi & Terstruktur",
+        "Responsive Interface & Modern UI"
+      ],
+      "tools": ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
+      "image": "/images/project-kotak-surat-bk.jpg",
+      "githubUrl": "https://github.com/sapira8130-sketch",
+      "liveUrl": "#",
+      "status": "Completed"
+    },
+    {
+      "id": "project-3",
+      "number": "03",
+      "title": "TaskFlow — To-Do List Web & Mobile",
+      "subtitle": "Cross-Platform Productivity App",
+      "category": "Web Application, Mobile Application",
+      "type": "ACADEMIC / PERSONAL PROJECT",
+      "date": "June 2026",
+      "summary": "Mengembangkan aplikasi produktivitas manajemen tugas TaskFlow berbasis mobile (Flutter/Dart) dan website dengan fitur ringkasan tugas (Total, Selesai, Pending), pencarian tugas, serta pengelolaan status.",
+      "problem": "Banyak tugas sekolah dan harian yang berantakan atau lupa dikerjakan karena tidak ada sistem pelacak progres yang terpusat di mobile dan web.",
+      "solution": "Mengembangkan aplikasi TaskFlow berbasis Flutter (Mobile) dan Web untuk membantu pengguna mencatat, memantau ringkasan tugas (Total, Selesai, Pending), serta mengorganisir status tugas.",
+      "features": [
+        "Statistik Ringkasan Tugas (Total, Selesai, Pending)",
+        "Cross-Platform Mobile (Flutter/Dart) & Web",
+        "Pencarian & Filter Kategori Tugas",
+        "Form Tambah & Kelola Tugas",
+        "State Management Provider"
+      ],
+      "tools": ["Flutter", "Dart", "Provider", "JavaScript", "Node.js"],
+      "image": "/images/project-todo-app.jpg",
+      "githubUrl": "https://github.com/sapira8130-sketch",
+      "liveUrl": "#",
+      "status": "Active Project"
+    }
+  ],
+  "projectJourney": [
+    {
+      "date": "October 2024",
+      "role": "UI/UX Designer & Web Designer",
+      "title": "Design Website Wardah Cosmetic",
+      "tag": "ACADEMIC PROJECT",
+      "description": "Merancang UI/UX antarmuka E-Commerce Wardah Cosmetic lengkap dari katalog produk hingga halaman detail produk."
+    },
+    {
+      "date": "September 2025",
+      "role": "Full Stack Developer Student",
+      "title": "Web Kotak Curhat BK",
+      "tag": "ACADEMIC PROJECT",
+      "description": "Mengembangkan website sistem Kotak Curhat BK (Bimbingan Konseling) digital untuk konseling dan penyampaian aspirasi siswa."
+    },
+    {
+      "date": "June 2026",
+      "role": "Web & Mobile Developer",
+      "title": "TaskFlow — To-Do List Web & Mobile",
+      "tag": "ACADEMIC / PERSONAL PROJECT",
+      "description": "Aplikasi manajemen tugas produktivitas TaskFlow cross-platform (Web & Flutter Mobile) untuk efisiensi pengguna."
+    }
+  ],
+  "education": {
+    "school": "SMK JAKARTA PUSAT 1",
+    "major": "Rekayasa Perangkat Lunak (RPL)",
+    "period": "2024 — 2027",
+    "description": "Studying software engineering with an interest in web development, UI/UX design, databases, and application development."
+  }
+}

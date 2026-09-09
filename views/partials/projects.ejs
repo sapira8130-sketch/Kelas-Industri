@@ -1,0 +1,97 @@
+<!-- Featured Projects Section -->
+<section id="projects" class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">// MY WORK</span>
+    <h2 class="section-title">FEATURED PROJECTS</h2>
+    <p class="section-desc">Kumpulan project nyata berbasis akademik & personal yang telah dikembangkan dengan fokus pada fungsionalitas dan kualitas antarmuka.</p>
+  </div>
+
+  <div class="projects-grid">
+    <% if (portfolio.projects) { %>
+      <% portfolio.projects.forEach(project => { %>
+        <div class="glass-card project-card">
+          <!-- Thumbnail & Header -->
+          <div class="project-thumb-wrapper">
+            <img src="<%= project.image %>" alt="<%= project.title %> Thumbnail" class="project-thumb" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop';">
+            
+            <div class="project-type-tag">
+              <span class="glass-pill accent-blue" style="font-size: 0.75rem;">
+                <%= project.type %>
+              </span>
+            </div>
+
+            <span class="project-number"><%= project.number %></span>
+          </div>
+
+          <!-- Project Body Details -->
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category"><%= project.category %></span>
+              <span><%= project.date %></span>
+            </div>
+
+            <h3 class="project-title"><%= project.title %></h3>
+            <div style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 600; margin-top: -8px; margin-bottom: 6px;"><%= project.subtitle %></div>
+            
+            <p class="project-desc"><%= project.summary %></p>
+
+            <!-- Problem & Solution Blocks (Ref Emir Yafi Style) -->
+            <% if (project.problem) { %>
+              <div style="background: rgba(239, 68, 68, 0.08); border-left: 3px solid #f87171; padding: 12px 14px; border-radius: 8px; margin-top: 4px;">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; font-weight: 700; color: #f87171; letter-spacing: 0.08em; margin-bottom: 4px;">// PROBLEM</div>
+                <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;"><%= project.problem %></div>
+              </div>
+            <% } %>
+
+            <% if (project.solution) { %>
+              <div style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #34d399; padding: 12px 14px; border-radius: 8px; margin-top: 4px;">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; font-weight: 700; color: #34d399; letter-spacing: 0.08em; margin-bottom: 4px;">// SOLUTION</div>
+                <div style="font-size: 0.86rem; color: #e2e8f0; line-height: 1.5;"><%= project.solution %></div>
+              </div>
+            <% } %>
+
+            <!-- Features Section -->
+            <div style="margin-top: 6px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.08em; margin-bottom: 8px;">// FEATURES</div>
+              <div class="project-features-list">
+                <% if (project.features) { %>
+                  <% project.features.forEach(feature => { %>
+                    <div style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem; color: #cbd5e1; margin-bottom: 4px;">
+                      <span style="color: var(--accent-cyan); font-weight: 700;">&bull;</span>
+                      <span><%= feature %></span>
+                    </div>
+                  <% }); %>
+                <% } %>
+              </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div>
+              <div class="project-features-title">Technologies Used</div>
+              <div class="project-tools">
+                <% if (project.tools) { %>
+                  <% project.tools.forEach(tool => { %>
+                    <span class="tool-chip"><%= tool %></span>
+                  <% }); %>
+                <% } %>
+              </div>
+            </div>
+
+            <!-- Footer Action Buttons -->
+            <div class="project-footer-actions">
+              <a href="<%= project.githubUrl %>" target="_blank" class="glass-button" style="padding: 8px 16px; font-size: 0.82rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>Code Repos</span>
+              </a>
+
+              <a href="#" class="glass-button glass-button-primary" onclick="alert('Live Demo link placeholder'); return false;" style="padding: 8px 16px; font-size: 0.82rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    <% } %>
+  </div>
+</section>

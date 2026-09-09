@@ -1,0 +1,25 @@
+<!-- Glass Footer Section -->
+<footer class="footer-glass">
+  <div class="footer-brand">
+    <%= portfolio.profile ? portfolio.profile.name.toUpperCase() : 'SAPIRA' %><span>.</span>
+  </div>
+
+  <div class="footer-subtitle">
+    FULL STACK WEB DEVELOPER &bull; SMK JAKARTA PUSAT 1 — REKAYASA PERANGKAT LUNAK
+  </div>
+
+  <ul class="footer-links">
+    <li><a href="<%= portfolio.contact ? portfolio.contact.whatsappUrl : 'https://wa.me/6287821276807' %>" target="_blank" class="footer-link">WhatsApp</a></li>
+    <li><a href="<%= portfolio.contact ? portfolio.contact.emailUrl : 'mailto:Sapira.8130@smk.belajar.id' %>" class="footer-link">Email</a></li>
+    <li><a href="<%= portfolio.contact ? portfolio.contact.githubUrl : 'https://github.com/sapira8130-sketch' %>" target="_blank" class="footer-link">GitHub</a></li>
+    <li><a href="/api/portfolio" target="_blank" class="footer-link" style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.82rem;">/api/portfolio</a></li>
+  </ul>
+
+  <div style="font-size: 0.85rem; color: #94a3b8; font-style: italic;">
+    biasanya membalas dalam 1-2 hari — terima kasih sudah mampir 🌊
+  </div>
+
+  <div class="footer-copyright">
+    &copy; 2026 <%= portfolio.profile ? portfolio.profile.name : 'Sapira' %> &middot; Dibuat dengan &#128153; Express + EJS + Glassmorphism
+  </div>
+</footer>

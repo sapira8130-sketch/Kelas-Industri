@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapira | Full Stack Web Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Sapira, a Software Engineering student and aspiring Full Stack Web Developer from SMK JAKARTA PUSAT 1. Experienced in Web Development, UI/UX Design, HTML, CSS, JavaScript, Node.js, and MySQL.">
+  <meta name="keywords" content="Sapira, Full Stack Web Developer, Portfolio, SMK Jakarta Pusat 1, RPL, Rekayasa Perangkat Lunak, UI/UX Design, Node.js, JavaScript, Web Developer Indonesia">
+  <meta name="author" content="Sapira">
+
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:title" content="Sapira | Full Stack Web Developer">
+  <meta property="og:description" content="Portfolio of Sapira, a Software Engineering student and aspiring Full Stack Web Developer from SMK JAKARTA PUSAT 1.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sapira.dev">
+  <meta property="og:image" content="/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Star Field Background Layer -->
+  <div class="star-field"></div>
+
+  <!-- Main Application Wrapper -->
+  <div class="app-container">
+    
+    <!-- TopBar macOS Window Header Widget -->
+    <%- include('partials/topbar') %>
+
+    <!-- Sticky Glass Navigation -->
+    <%- include('partials/navbar') %>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Section Widget -->
+      <%- include('partials/hero') %>
+
+      <!-- About Section -->
+      <%- include('partials/about') %>
+
+      <!-- Skills & Tech Stack Section -->
+      <%- include('partials/skills') %>
+
+      <!-- Services Section -->
+      <%- include('partials/services') %>
+
+      <!-- Featured Projects Section -->
+      <%- include('partials/projects') %>
+
+      <!-- Project Journey Section -->
+      <%- include('partials/experience') %>
+
+      <!-- Education Section -->
+      <%- include('partials/education') %>
+
+      <!-- Contact Section -->
+      <%- include('partials/contact') %>
+    </main>
+
+    <!-- Glass Footer -->
+    <%- include('partials/footer') %>
+
+  </div>
+
+  <!-- Client-side Main Script -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

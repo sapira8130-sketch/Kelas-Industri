@@ -1,0 +1,22 @@
+<!-- Education Section -->
+<section id="education" class="section reveal">
+  <div class="section-header">
+    <span class="section-tag">// ACADEMIC BACKGROUND</span>
+    <h2 class="section-title">EDUCATION</h2>
+  </div>
+
+  <div class="glass-card education-card">
+    <div class="edu-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+    </div>
+
+    <div>
+      <h3 class="edu-school"><%= portfolio.education ? portfolio.education.school : 'SMK JAKARTA PUSAT 1' %></h3>
+      <p class="edu-major"><%= portfolio.education ? portfolio.education.major : 'Rekayasa Perangkat Lunak (RPL)' %></p>
+      <p class="edu-period"><%= portfolio.education ? portfolio.education.period : '2024 — 2027' %></p>
+      <p class="section-desc" style="margin-top: 6px;">
+        <%= portfolio.education ? portfolio.education.description : 'Studying software engineering with an interest in web development, UI/UX design, databases, and application development.' %>
+      </p>
+    </div>
+  </div>
+</section>
