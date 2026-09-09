@@ -866,12 +866,12 @@ body {
 
 .stacked-project-card {
   position: sticky;
-  top: calc(90px + (var(--card-index) * 35px));
+  top: calc(90px + (var(--card-index) * 60px));
   width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background: linear-gradient(135deg, rgba(13, 17, 23, 0.95) 0%, rgba(22, 27, 34, 0.92) 100%);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 24px;
@@ -884,7 +884,7 @@ body {
 }
 
 .stacked-project-card + .stacked-project-card {
-  margin-top: -60px;
+  margin-top: 24px;
 }
 
 .stacked-project-card:hover {
