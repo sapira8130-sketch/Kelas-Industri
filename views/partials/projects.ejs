@@ -1,4 +1,4 @@
-<!-- Featured Projects Section - Stacked Overlapping Showcase -->
+<!-- Featured Projects Section - Ref Emir Yafi Overlapping Showcase -->
 <section id="projects" class="section reveal">
   <div class="section-header">
     <span class="section-tag">// MY WORK</span>
@@ -9,32 +9,22 @@
   <div class="stacked-projects-container">
     <% if (portfolio.projects) { %>
       <% portfolio.projects.forEach((project, index) => { %>
-        <article class="glass-card stacked-project-card" style="--card-index: <%= index %>; z-index: <%= index + 1 %>;">
-          <!-- Floating Category Badge -->
+        <article class="glass-card stacked-project-card" style="--card-index: <%= index %>; z-index: <%= 20 - index %>;">
+          <!-- Category Badge Floating Pill Top Left -->
           <div class="stacked-category-badge">
             <span class="badge-pill">
-              <span class="badge-dot"></span>
-              <%= project.type || project.category %>
+              <%= project.category %> &bull; <%= project.type || 'Academic Project' %>
             </span>
           </div>
 
-          <!-- Project Number Badge -->
-          <span class="stacked-project-number"><%= project.number %></span>
-
           <div class="stacked-card-inner">
-            <!-- Left Side: Project Image (Clear & Fully Visible) -->
+            <!-- Left Side: Inner Frame Image -->
             <div class="stacked-thumb-wrapper">
               <img src="<%= project.image %>" alt="<%= project.title %> Thumbnail" class="stacked-thumb" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop';">
             </div>
 
-            <!-- Right Side: Project Details & Content -->
+            <!-- Right Side: Content Details -->
             <div class="stacked-project-body">
-              <div class="stacked-project-meta">
-                <span class="stacked-category-name"><%= project.category %></span>
-                <span class="stacked-meta-divider">•</span>
-                <span class="stacked-date"><%= project.date %></span>
-              </div>
-
               <h3 class="stacked-project-title"><%= project.title %></h3>
               <% if (project.subtitle) { %>
                 <div class="stacked-project-subtitle"><%= project.subtitle %></div>
@@ -42,61 +32,20 @@
               
               <p class="stacked-project-desc"><%= project.summary %></p>
 
-              <!-- Problem & Solution Block (if present) -->
-              <% if (project.problem || project.solution) { %>
-                <div class="stacked-problem-solution-grid">
-                  <% if (project.problem) { %>
-                    <div class="stacked-info-box problem-box">
-                      <div class="box-label">// PROBLEM</div>
-                      <div class="box-text"><%= project.problem %></div>
-                    </div>
-                  <% } %>
-                  <% if (project.solution) { %>
-                    <div class="stacked-info-box solution-box">
-                      <div class="box-label">// SOLUTION</div>
-                      <div class="box-text"><%= project.solution %></div>
-                    </div>
-                  <% } %>
-                </div>
-              <% } %>
-
-              <!-- Features (if present) -->
-              <% if (project.features && project.features.length > 0) { %>
-                <div class="stacked-features-wrapper">
-                  <div class="stacked-sub-label">// KEY FEATURES</div>
-                  <div class="stacked-features-list">
-                    <% project.features.forEach(feature => { %>
-                      <div class="stacked-feature-item">
-                        <span class="feature-bullet">&bull;</span>
-                        <span><%= feature %></span>
-                      </div>
-                    <% }); %>
-                  </div>
-                </div>
-              <% } %>
-
-              <!-- Tech Stack Badges -->
+              <!-- Technologies Pills -->
               <% if (project.tools && project.tools.length > 0) { %>
-                <div class="stacked-tech-wrapper">
-                  <div class="stacked-sub-label">TECHNOLOGIES</div>
-                  <div class="project-tools">
-                    <% project.tools.forEach(tool => { %>
-                      <span class="tool-chip"><%= tool %></span>
-                    <% }); %>
-                  </div>
+                <div class="stacked-tech-pills">
+                  <% project.tools.forEach(tool => { %>
+                    <span class="tech-pill-item"><%= tool %></span>
+                  <% }); %>
                 </div>
               <% } %>
 
-              <!-- Footer CTA Actions -->
+              <!-- Pill Details Button (Ref Screenshot) -->
               <div class="stacked-footer-actions">
-                <a href="<%= project.githubUrl %>" target="_blank" class="glass-button stacked-cta-btn" aria-label="View Project Code for <%= project.title %>">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  <span>Code Repos</span>
-                </a>
-
-                <button type="button" class="glass-button glass-button-primary stacked-cta-main btn-open-modal" data-project-index="<%= index %>" aria-label="View Project Details for <%= project.title %>">
-                  <span>VIEW PROJECT</span>
-                  <span class="cta-arrow">&rarr;</span>
+                <button type="button" class="stacked-details-btn btn-open-modal" data-project-index="<%= index %>" aria-label="View Details for <%= project.title %>">
+                  <span>Details</span>
+                  <span class="btn-arrow">&rarr;</span>
                 </button>
               </div>
             </div>
@@ -166,5 +115,6 @@
     window.PORTFOLIO_PROJECTS = <%- JSON.stringify(portfolio.projects || []) %>;
   </script>
 </section>
+
 
 
