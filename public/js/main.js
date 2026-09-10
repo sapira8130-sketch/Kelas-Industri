@@ -162,10 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function openProjectModal(project) {
-    document.getElementById('modal-project-number').textContent = project.number || '01';
-    document.getElementById('modal-project-type').textContent = project.type || project.category || 'PROJECT';
-    document.getElementById('modal-project-category').textContent = project.category || '';
-    document.getElementById('modal-project-date').textContent = project.date || '';
+    const typeBadge = document.getElementById('modal-project-type');
+    if (typeBadge) {
+      typeBadge.textContent = `${project.category || ''} • ${project.type || 'Academic Project'}`;
+    }
+
     document.getElementById('modal-project-title').textContent = project.title || '';
     document.getElementById('modal-project-subtitle').textContent = project.subtitle || '';
     document.getElementById('modal-project-summary').textContent = project.summary || '';
@@ -175,40 +176,39 @@ document.addEventListener('DOMContentLoaded', () => {
     imgEl.src = project.image || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop';
     imgEl.alt = project.title || 'Project Preview';
 
-    // Problem & Solution
+    // Problem & Solution (Ref Slide 5)
     const psContainer = document.getElementById('modal-problem-solution-container');
     psContainer.innerHTML = '';
     if (project.problem || project.solution) {
-      let psHtml = '<div class="stacked-problem-solution-grid">';
+      let psHtml = '';
       if (project.problem) {
-        psHtml += `<div class="stacked-info-box problem-box"><div class="box-label">// PROBLEM</div><div class="box-text">${project.problem}</div></div>`;
+        psHtml += `<div class="modal-text-block"><div class="modal-mono-label">// MASALAH</div><div class="modal-text-content">${project.problem}</div></div>`;
       }
       if (project.solution) {
-        psHtml += `<div class="stacked-info-box solution-box"><div class="box-label">// SOLUTION</div><div class="box-text">${project.solution}</div></div>`;
+        psHtml += `<div class="modal-text-block"><div class="modal-mono-label">// SOLUSI</div><div class="modal-text-content">${project.solution}</div></div>`;
       }
-      psHtml += '</div>';
       psContainer.innerHTML = psHtml;
     }
 
-    // Key Features
+    // Key Features Grid with Green Checkmarks (Ref Slide 5)
     const featuresEl = document.getElementById('modal-project-features');
     featuresEl.innerHTML = '';
     if (project.features && project.features.length > 0) {
+      let featsHtml = '<div class="modal-features-grid">';
       project.features.forEach(feat => {
-        const item = document.createElement('div');
-        item.className = 'stacked-feature-item';
-        item.innerHTML = `<span class="feature-bullet">&bull;</span><span>${feat}</span>`;
-        featuresEl.appendChild(item);
+        featsHtml += `<div class="modal-feature-card"><span class="check-icon">✓</span><span>${feat}</span></div>`;
       });
+      featsHtml += '</div>';
+      featuresEl.innerHTML = featsHtml;
     }
 
-    // Tools
+    // Technologies Pills (Ref Slide 5)
     const toolsEl = document.getElementById('modal-project-tools');
     toolsEl.innerHTML = '';
     if (project.tools && project.tools.length > 0) {
       project.tools.forEach(tool => {
         const chip = document.createElement('span');
-        chip.className = 'tool-chip';
+        chip.className = 'tech-pill-item';
         chip.textContent = tool;
         toolsEl.appendChild(chip);
       });
